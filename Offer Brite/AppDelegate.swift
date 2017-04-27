@@ -8,16 +8,60 @@
 
 import UIKit
 import CoreData
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var drawerSide:MMDrawerSide = .left
+    var centerContainer:MMDrawerController?
+    public static let delegate  = UIApplication.shared.delegate as! AppDelegate
+    let storyBoard = UIStoryboard(name: Constants.MAIN, bundle: nil)
+    public static var delegateInstance:AppDelegate?
+    public static var defaultInstance:UserDefaults?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        registerDefualts()
+        UINavigationBar.appearance().barTintColor = UIColor.purple
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        UINavigationBar.appearance().barStyle = .blackTranslucent
+        presentInitialVC()
         return true
+    }
+    public static func getDelegateInstance() -> AppDelegate{
+        if delegateInstance == nil {
+            delegateInstance = UIApplication.shared.delegate as? AppDelegate
+        }
+        return delegateInstance!
+    }
+    public static func getUserDataInstance() -> UserDefaults{
+        if defaultInstance == nil {
+        defaultInstance = UserDefaults.standard
+        }
+        return defaultInstance!
+    }
+    func presentInitialVC() {
+        
+        if UserDefaultsData.getBool(DefaultDataConstants.IS_FIRST_TIME){
+            let loginVC = self.storyBoard.instantiateViewController(withIdentifier: IdentifierConstants.SB_LOGIN) as! Login
+            window?.rootViewController = loginVC
+        }else {
+            setDrawer()
+        }
+        
+    }
+    func registerDefualts() {
+        AppDelegate.getUserDataInstance().register(defaults: [ConstantsKeyPairs.IS_FIRST_TIME : true])
+    }
+    func setDrawer()  {
+        let centerViewController = self.storyBoard.instantiateViewController(withIdentifier: Constants.VIEW_CONTROLLER) as! ViewController
+        let leftViewController = self.storyBoard.instantiateViewController(withIdentifier: Constants.NAVIGATION_DRAWER) as! NavigationDrawerVC
+        let leftDrawer = UINavigationController(rootViewController: leftViewController)
+        let center = UINavigationController(rootViewController: centerViewController)
+       centerContainer =  MMDrawerController(center: center, leftDrawerViewController: leftDrawer)
+        centerContainer!.openDrawerGestureModeMask=MMOpenDrawerGestureMode.panningCenterView
+        centerContainer!.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.panningCenterView
+        window!.rootViewController=centerContainer
+        window!.makeKeyAndVisible()
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4087A7ADBC82F504A01C7489 /* Pods_Offer_BriteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E900D73FA5854387EAD67BB7 /* Pods_Offer_BriteTests.framework */; };
+		503967DD1EAE4B87004AE96B /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503967DA1EAE4B87004AE96B /* HoshiTextField.swift */; };
+		503967DE1EAE4B87004AE96B /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503967DC1EAE4B87004AE96B /* TextFieldsEffects.swift */; };
+		503967E01EAE4E8C004AE96B /* ConstantsKeyPairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503967DF1EAE4E8C004AE96B /* ConstantsKeyPairs.swift */; };
+		503967E21EAE4ECE004AE96B /* DefaultDataConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503967E11EAE4ECE004AE96B /* DefaultDataConstants.swift */; };
+		503967E41EAE4F2B004AE96B /* UserDefaultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503967E31EAE4F2B004AE96B /* UserDefaultData.swift */; };
+		503BD73E1EB0A5C400D634D2 /* HomeItemDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503BD73D1EB0A5C400D634D2 /* HomeItemDetails.swift */; };
+		50528F4E1EAF537F00B19D0E /* DrawerItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50528F4C1EAF537F00B19D0E /* DrawerItemCell.swift */; };
+		50528F4F1EAF537F00B19D0E /* DrawerItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50528F4D1EAF537F00B19D0E /* DrawerItemCell.xib */; };
+		50528F511EAF53E300B19D0E /* DrawerItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50528F501EAF53E300B19D0E /* DrawerItemModel.swift */; };
 		5069BDE81EA7B43500470B9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5069BDE71EA7B43500470B9E /* AppDelegate.swift */; };
 		5069BDEA1EA7B43500470B9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5069BDE91EA7B43500470B9E /* ViewController.swift */; };
 		5069BDED1EA7B43500470B9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5069BDEB1EA7B43500470B9E /* Main.storyboard */; };
@@ -15,6 +25,25 @@
 		5069BDF51EA7B43600470B9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5069BDF31EA7B43600470B9E /* LaunchScreen.storyboard */; };
 		5069BE001EA7B43700470B9E /* Offer_BriteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5069BDFF1EA7B43700470B9E /* Offer_BriteTests.swift */; };
 		5069BE0B1EA7B43700470B9E /* Offer_BriteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5069BE0A1EA7B43700470B9E /* Offer_BriteUITests.swift */; };
+		5069BE2A1EA7B5FC00470B9E /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5069BE231EA7B5FC00470B9E /* MMDrawerBarButtonItem.m */; };
+		5069BE2B1EA7B5FC00470B9E /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5069BE251EA7B5FC00470B9E /* MMDrawerController.m */; };
+		5069BE2C1EA7B5FC00470B9E /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 5069BE281EA7B5FC00470B9E /* MMDrawerVisualState.m */; };
+		5069BE2E1EA7B75900470B9E /* NavigationDrawerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5069BE2D1EA7B75900470B9E /* NavigationDrawerVC.swift */; };
+		5069BE301EA7C07300470B9E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5069BE2F1EA7C07300470B9E /* Constants.swift */; };
+		5069BE321EA7C3C500470B9E /* IdentifierConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5069BE311EA7C3C500470B9E /* IdentifierConstants.swift */; };
+		5073EB521EA89F6400CA50D6 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5073EB511EA89F6400CA50D6 /* UIViewController+MMDrawerController.m */; };
+		5073EB541EA8A2D300CA50D6 /* Liked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073EB531EA8A2D300CA50D6 /* Liked.swift */; };
+		5073EB561EA8A2E800CA50D6 /* Followed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073EB551EA8A2E800CA50D6 /* Followed.swift */; };
+		5073EB581EA8A30E00CA50D6 /* PrivacyPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073EB571EA8A30E00CA50D6 /* PrivacyPolicy.swift */; };
+		5073EB5A1EA8A33000CA50D6 /* TermsConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073EB591EA8A33000CA50D6 /* TermsConditions.swift */; };
+		5073EB5C1EA8A35700CA50D6 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073EB5B1EA8A35700CA50D6 /* Login.swift */; };
+		5073EB5E1EA8A36400CA50D6 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073EB5D1EA8A36400CA50D6 /* SignUp.swift */; };
+		5073EB631EA8B6F700CA50D6 /* HomeItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073EB611EA8B6F700CA50D6 /* HomeItemCell.swift */; };
+		5073EB641EA8B6F700CA50D6 /* HomeItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5073EB621EA8B6F700CA50D6 /* HomeItemCell.xib */; };
+		5073EB661EA8C38700CA50D6 /* AppVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073EB651EA8C38700CA50D6 /* AppVersion.swift */; };
+		508276DD1EAFA05300072AEB /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508276DC1EAFA05300072AEB /* AppUtils.swift */; };
+		84E0BAE47D9BA482CA79426F /* Pods_Offer_BriteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D0097FDC4E93DD622E67B1 /* Pods_Offer_BriteUITests.framework */; };
+		D50D9C1C12C72A77B389A7F9 /* Pods_Offer_Brite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517BB4B13625A207958A523C /* Pods_Offer_Brite.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +64,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14D0097FDC4E93DD622E67B1 /* Pods_Offer_BriteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Offer_BriteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		503967DA1EAE4B87004AE96B /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
+		503967DB1EAE4B87004AE96B /* TextFieldEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldEffects.h; sourceTree = "<group>"; };
+		503967DC1EAE4B87004AE96B /* TextFieldsEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldsEffects.swift; sourceTree = "<group>"; };
+		503967DF1EAE4E8C004AE96B /* ConstantsKeyPairs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstantsKeyPairs.swift; sourceTree = "<group>"; };
+		503967E11EAE4ECE004AE96B /* DefaultDataConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultDataConstants.swift; sourceTree = "<group>"; };
+		503967E31EAE4F2B004AE96B /* UserDefaultData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultData.swift; sourceTree = "<group>"; };
+		503BD73D1EB0A5C400D634D2 /* HomeItemDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeItemDetails.swift; sourceTree = "<group>"; };
+		50528F4C1EAF537F00B19D0E /* DrawerItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerItemCell.swift; sourceTree = "<group>"; };
+		50528F4D1EAF537F00B19D0E /* DrawerItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawerItemCell.xib; sourceTree = "<group>"; };
+		50528F501EAF53E300B19D0E /* DrawerItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerItemModel.swift; sourceTree = "<group>"; };
 		5069BDE41EA7B43500470B9E /* Offer Brite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Offer Brite.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5069BDE71EA7B43500470B9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5069BDE91EA7B43500470B9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +89,37 @@
 		5069BE061EA7B43700470B9E /* Offer BriteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Offer BriteUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5069BE0A1EA7B43700470B9E /* Offer_BriteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer_BriteUITests.swift; sourceTree = "<group>"; };
 		5069BE0C1EA7B43700470B9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5069BE211EA7B5FA00470B9E /* Offer Brite-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Offer Brite-Bridging-Header.h"; sourceTree = "<group>"; };
+		5069BE221EA7B5FC00470B9E /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		5069BE231EA7B5FC00470B9E /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		5069BE241EA7B5FC00470B9E /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		5069BE251EA7B5FC00470B9E /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		5069BE261EA7B5FC00470B9E /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		5069BE271EA7B5FC00470B9E /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		5069BE281EA7B5FC00470B9E /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		5069BE291EA7B5FC00470B9E /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		5069BE2D1EA7B75900470B9E /* NavigationDrawerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationDrawerVC.swift; sourceTree = "<group>"; };
+		5069BE2F1EA7C07300470B9E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5069BE311EA7C3C500470B9E /* IdentifierConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifierConstants.swift; sourceTree = "<group>"; };
+		5073EB511EA89F6400CA50D6 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		5073EB531EA8A2D300CA50D6 /* Liked.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Liked.swift; sourceTree = "<group>"; };
+		5073EB551EA8A2E800CA50D6 /* Followed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Followed.swift; sourceTree = "<group>"; };
+		5073EB571EA8A30E00CA50D6 /* PrivacyPolicy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyPolicy.swift; sourceTree = "<group>"; };
+		5073EB591EA8A33000CA50D6 /* TermsConditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsConditions.swift; sourceTree = "<group>"; };
+		5073EB5B1EA8A35700CA50D6 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		5073EB5D1EA8A36400CA50D6 /* SignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		5073EB611EA8B6F700CA50D6 /* HomeItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeItemCell.swift; sourceTree = "<group>"; };
+		5073EB621EA8B6F700CA50D6 /* HomeItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeItemCell.xib; sourceTree = "<group>"; };
+		5073EB651EA8C38700CA50D6 /* AppVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppVersion.swift; sourceTree = "<group>"; };
+		508276DC1EAFA05300072AEB /* AppUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
+		517BB4B13625A207958A523C /* Pods_Offer_Brite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Offer_Brite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BB004CD5D9A9A865F5408C3 /* Pods-Offer Brite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Offer Brite.release.xcconfig"; path = "Pods/Target Support Files/Pods-Offer Brite/Pods-Offer Brite.release.xcconfig"; sourceTree = "<group>"; };
+		8F3CAE63E47573DD7E1DBDD5 /* Pods-Offer BriteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Offer BriteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Offer BriteTests/Pods-Offer BriteTests.release.xcconfig"; sourceTree = "<group>"; };
+		974C04CA5E756BB57C888104 /* Pods-Offer BriteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Offer BriteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Offer BriteUITests/Pods-Offer BriteUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B4D0D473950DE39E1BD42924 /* Pods-Offer BriteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Offer BriteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Offer BriteTests/Pods-Offer BriteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CA1052988A76CE30F3C7CE0A /* Pods-Offer Brite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Offer Brite.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Offer Brite/Pods-Offer Brite.debug.xcconfig"; sourceTree = "<group>"; };
+		E900D73FA5854387EAD67BB7 /* Pods_Offer_BriteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Offer_BriteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFA7B5C62F62D23AAD2E2AFD /* Pods-Offer BriteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Offer BriteUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Offer BriteUITests/Pods-Offer BriteUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D50D9C1C12C72A77B389A7F9 /* Pods_Offer_Brite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4087A7ADBC82F504A01C7489 /* Pods_Offer_BriteTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +143,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E0BAE47D9BA482CA79426F /* Pods_Offer_BriteUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		503967D91EAE4AE0004AE96B /* TextFieldEffects */ = {
+			isa = PBXGroup;
+			children = (
+				503967DA1EAE4B87004AE96B /* HoshiTextField.swift */,
+				503967DB1EAE4B87004AE96B /* TextFieldEffects.h */,
+				503967DC1EAE4B87004AE96B /* TextFieldsEffects.swift */,
+			);
+			name = TextFieldEffects;
+			sourceTree = "<group>";
+		};
 		5069BDDB1EA7B43500470B9E = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +167,8 @@
 				5069BDFE1EA7B43700470B9E /* Offer BriteTests */,
 				5069BE091EA7B43700470B9E /* Offer BriteUITests */,
 				5069BDE51EA7B43500470B9E /* Products */,
+				82CFAA59AFA4E01E81F38177 /* Pods */,
+				73067B757EA7EDF957D14A5F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,8 +185,17 @@
 		5069BDE61EA7B43500470B9E /* Offer Brite */ = {
 			isa = PBXGroup;
 			children = (
+				503967D91EAE4AE0004AE96B /* TextFieldEffects */,
+				5069BE201EA7B5AA00470B9E /* SlideMenu */,
+				5069BE1F1EA7B58A00470B9E /* Responses */,
+				5069BE1E1EA7B58000470B9E /* Utils */,
+				5069BE1D1EA7B57800470B9E /* Models */,
+				5069BE1C1EA7B56B00470B9E /* Screens */,
+				5069BE1B1EA7B56300470B9E /* TVCells */,
+				5069BE1A1EA7B54F00470B9E /* Extensions */,
+				5069BE191EA7B54500470B9E /* Nibs */,
+				5069BE181EA7B53500470B9E /* Drawer */,
 				5069BDE71EA7B43500470B9E /* AppDelegate.swift */,
-				5069BDE91EA7B43500470B9E /* ViewController.swift */,
 				5069BDEB1EA7B43500470B9E /* Main.storyboard */,
 				5069BDF11EA7B43600470B9E /* Assets.xcassets */,
 				5069BDF31EA7B43600470B9E /* LaunchScreen.storyboard */,
@@ -128,6 +223,123 @@
 			path = "Offer BriteUITests";
 			sourceTree = "<group>";
 		};
+		5069BE181EA7B53500470B9E /* Drawer */ = {
+			isa = PBXGroup;
+			children = (
+				5069BE2D1EA7B75900470B9E /* NavigationDrawerVC.swift */,
+			);
+			name = Drawer;
+			sourceTree = "<group>";
+		};
+		5069BE191EA7B54500470B9E /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				5073EB621EA8B6F700CA50D6 /* HomeItemCell.xib */,
+				50528F4D1EAF537F00B19D0E /* DrawerItemCell.xib */,
+			);
+			name = Nibs;
+			sourceTree = "<group>";
+		};
+		5069BE1A1EA7B54F00470B9E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		5069BE1B1EA7B56300470B9E /* TVCells */ = {
+			isa = PBXGroup;
+			children = (
+				50528F4C1EAF537F00B19D0E /* DrawerItemCell.swift */,
+				5073EB611EA8B6F700CA50D6 /* HomeItemCell.swift */,
+			);
+			name = TVCells;
+			sourceTree = "<group>";
+		};
+		5069BE1C1EA7B56B00470B9E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				5069BDE91EA7B43500470B9E /* ViewController.swift */,
+				5073EB531EA8A2D300CA50D6 /* Liked.swift */,
+				5073EB551EA8A2E800CA50D6 /* Followed.swift */,
+				5073EB571EA8A30E00CA50D6 /* PrivacyPolicy.swift */,
+				5073EB591EA8A33000CA50D6 /* TermsConditions.swift */,
+				5073EB5B1EA8A35700CA50D6 /* Login.swift */,
+				5073EB5D1EA8A36400CA50D6 /* SignUp.swift */,
+				5073EB651EA8C38700CA50D6 /* AppVersion.swift */,
+				503BD73D1EB0A5C400D634D2 /* HomeItemDetails.swift */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
+		5069BE1D1EA7B57800470B9E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				50528F501EAF53E300B19D0E /* DrawerItemModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		5069BE1E1EA7B58000470B9E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5069BE2F1EA7C07300470B9E /* Constants.swift */,
+				5069BE311EA7C3C500470B9E /* IdentifierConstants.swift */,
+				503967DF1EAE4E8C004AE96B /* ConstantsKeyPairs.swift */,
+				503967E11EAE4ECE004AE96B /* DefaultDataConstants.swift */,
+				503967E31EAE4F2B004AE96B /* UserDefaultData.swift */,
+				508276DC1EAFA05300072AEB /* AppUtils.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		5069BE1F1EA7B58A00470B9E /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Responses;
+			sourceTree = "<group>";
+		};
+		5069BE201EA7B5AA00470B9E /* SlideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				5073EB511EA89F6400CA50D6 /* UIViewController+MMDrawerController.m */,
+				5069BE221EA7B5FC00470B9E /* MMDrawerBarButtonItem.h */,
+				5069BE231EA7B5FC00470B9E /* MMDrawerBarButtonItem.m */,
+				5069BE241EA7B5FC00470B9E /* MMDrawerController.h */,
+				5069BE251EA7B5FC00470B9E /* MMDrawerController.m */,
+				5069BE261EA7B5FC00470B9E /* MMDrawerController+Subclass.h */,
+				5069BE271EA7B5FC00470B9E /* MMDrawerVisualState.h */,
+				5069BE281EA7B5FC00470B9E /* MMDrawerVisualState.m */,
+				5069BE291EA7B5FC00470B9E /* UIViewController+MMDrawerController.h */,
+				5069BE211EA7B5FA00470B9E /* Offer Brite-Bridging-Header.h */,
+			);
+			name = SlideMenu;
+			sourceTree = "<group>";
+		};
+		73067B757EA7EDF957D14A5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				517BB4B13625A207958A523C /* Pods_Offer_Brite.framework */,
+				E900D73FA5854387EAD67BB7 /* Pods_Offer_BriteTests.framework */,
+				14D0097FDC4E93DD622E67B1 /* Pods_Offer_BriteUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		82CFAA59AFA4E01E81F38177 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA1052988A76CE30F3C7CE0A /* Pods-Offer Brite.debug.xcconfig */,
+				8BB004CD5D9A9A865F5408C3 /* Pods-Offer Brite.release.xcconfig */,
+				B4D0D473950DE39E1BD42924 /* Pods-Offer BriteTests.debug.xcconfig */,
+				8F3CAE63E47573DD7E1DBDD5 /* Pods-Offer BriteTests.release.xcconfig */,
+				EFA7B5C62F62D23AAD2E2AFD /* Pods-Offer BriteUITests.debug.xcconfig */,
+				974C04CA5E756BB57C888104 /* Pods-Offer BriteUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +347,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5069BE0F1EA7B43700470B9E /* Build configuration list for PBXNativeTarget "Offer Brite" */;
 			buildPhases = (
+				8B1590AD21C359F3EA169335 /* [CP] Check Pods Manifest.lock */,
 				5069BDE01EA7B43500470B9E /* Sources */,
 				5069BDE11EA7B43500470B9E /* Frameworks */,
 				5069BDE21EA7B43500470B9E /* Resources */,
+				F6DB579BBDFEDAFB1D48D026 /* [CP] Embed Pods Frameworks */,
+				6590C464F5487276ED19BF85 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +367,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5069BE121EA7B43700470B9E /* Build configuration list for PBXNativeTarget "Offer BriteTests" */;
 			buildPhases = (
+				E081DCFA47C1AC43A2576D3A /* [CP] Check Pods Manifest.lock */,
 				5069BDF71EA7B43700470B9E /* Sources */,
 				5069BDF81EA7B43700470B9E /* Frameworks */,
 				5069BDF91EA7B43700470B9E /* Resources */,
+				E0D23760EC4F120FF2ECFF02 /* [CP] Embed Pods Frameworks */,
+				EDC5CEC9DBA8C246092DDE05 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +388,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5069BE151EA7B43700470B9E /* Build configuration list for PBXNativeTarget "Offer BriteUITests" */;
 			buildPhases = (
+				63E154DF193D4B61186F888B /* [CP] Check Pods Manifest.lock */,
 				5069BE021EA7B43700470B9E /* Sources */,
 				5069BE031EA7B43700470B9E /* Frameworks */,
 				5069BE041EA7B43700470B9E /* Resources */,
+				92D2D38B2992DA6171E853DF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,6 +416,8 @@
 				TargetAttributes = {
 					5069BDE31EA7B43500470B9E = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5645JQQSAT;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					5069BDFA1EA7B43700470B9E = {
@@ -236,6 +458,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5069BDF51EA7B43600470B9E /* LaunchScreen.storyboard in Resources */,
+				5073EB641EA8B6F700CA50D6 /* HomeItemCell.xib in Resources */,
+				50528F4F1EAF537F00B19D0E /* DrawerItemCell.xib in Resources */,
 				5069BDF21EA7B43600470B9E /* Assets.xcassets in Resources */,
 				5069BDED1EA7B43500470B9E /* Main.storyboard in Resources */,
 			);
@@ -257,14 +481,161 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		63E154DF193D4B61186F888B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6590C464F5487276ED19BF85 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Offer Brite/Pods-Offer Brite-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B1590AD21C359F3EA169335 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		92D2D38B2992DA6171E853DF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Offer BriteUITests/Pods-Offer BriteUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E081DCFA47C1AC43A2576D3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E0D23760EC4F120FF2ECFF02 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Offer BriteTests/Pods-Offer BriteTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDC5CEC9DBA8C246092DDE05 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Offer BriteTests/Pods-Offer BriteTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6DB579BBDFEDAFB1D48D026 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Offer Brite/Pods-Offer Brite-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5069BDE01EA7B43500470B9E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50528F511EAF53E300B19D0E /* DrawerItemModel.swift in Sources */,
+				5069BE2E1EA7B75900470B9E /* NavigationDrawerVC.swift in Sources */,
+				5073EB561EA8A2E800CA50D6 /* Followed.swift in Sources */,
+				508276DD1EAFA05300072AEB /* AppUtils.swift in Sources */,
+				5073EB581EA8A30E00CA50D6 /* PrivacyPolicy.swift in Sources */,
+				50528F4E1EAF537F00B19D0E /* DrawerItemCell.swift in Sources */,
+				503967E01EAE4E8C004AE96B /* ConstantsKeyPairs.swift in Sources */,
+				5073EB5A1EA8A33000CA50D6 /* TermsConditions.swift in Sources */,
+				5069BE2C1EA7B5FC00470B9E /* MMDrawerVisualState.m in Sources */,
 				5069BDEA1EA7B43500470B9E /* ViewController.swift in Sources */,
+				5073EB631EA8B6F700CA50D6 /* HomeItemCell.swift in Sources */,
+				503967E41EAE4F2B004AE96B /* UserDefaultData.swift in Sources */,
+				5073EB5C1EA8A35700CA50D6 /* Login.swift in Sources */,
+				5073EB521EA89F6400CA50D6 /* UIViewController+MMDrawerController.m in Sources */,
+				5069BE2B1EA7B5FC00470B9E /* MMDrawerController.m in Sources */,
+				5069BE321EA7C3C500470B9E /* IdentifierConstants.swift in Sources */,
+				5069BE2A1EA7B5FC00470B9E /* MMDrawerBarButtonItem.m in Sources */,
+				503967DD1EAE4B87004AE96B /* HoshiTextField.swift in Sources */,
+				5073EB661EA8C38700CA50D6 /* AppVersion.swift in Sources */,
+				503967E21EAE4ECE004AE96B /* DefaultDataConstants.swift in Sources */,
+				503BD73E1EB0A5C400D634D2 /* HomeItemDetails.swift in Sources */,
+				503967DE1EAE4B87004AE96B /* TextFieldsEffects.swift in Sources */,
 				5069BDE81EA7B43500470B9E /* AppDelegate.swift in Sources */,
 				5069BDF01EA7B43600470B9E /* Offer_Brite.xcdatamodeld in Sources */,
+				5073EB5E1EA8A36400CA50D6 /* SignUp.swift in Sources */,
+				5073EB541EA8A2D300CA50D6 /* Liked.swift in Sources */,
+				5069BE301EA7C07300470B9E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,30 +785,40 @@
 		};
 		5069BE101EA7B43700470B9E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA1052988A76CE30F3C7CE0A /* Pods-Offer Brite.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 5645JQQSAT;
 				INFOPLIST_FILE = "Offer Brite/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.vb.Offer-Brite";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vb.offerbrite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Offer Brite/Offer Brite-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		5069BE111EA7B43700470B9E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BB004CD5D9A9A865F5408C3 /* Pods-Offer Brite.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 5645JQQSAT;
 				INFOPLIST_FILE = "Offer Brite/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.vb.Offer-Brite";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vb.offerbrite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Offer Brite/Offer Brite-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		5069BE131EA7B43700470B9E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4D0D473950DE39E1BD42924 /* Pods-Offer BriteTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -452,6 +833,7 @@
 		};
 		5069BE141EA7B43700470B9E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F3CAE63E47573DD7E1DBDD5 /* Pods-Offer BriteTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -466,6 +848,7 @@
 		};
 		5069BE161EA7B43700470B9E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFA7B5C62F62D23AAD2E2AFD /* Pods-Offer BriteUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "Offer BriteUITests/Info.plist";
@@ -479,6 +862,7 @@
 		};
 		5069BE171EA7B43700470B9E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 974C04CA5E756BB57C888104 /* Pods-Offer BriteUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "Offer BriteUITests/Info.plist";
@@ -509,6 +893,7 @@
 				5069BE111EA7B43700470B9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5069BE121EA7B43700470B9E /* Build configuration list for PBXNativeTarget "Offer BriteTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +902,7 @@
 				5069BE141EA7B43700470B9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5069BE151EA7B43700470B9E /* Build configuration list for PBXNativeTarget "Offer BriteUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +911,7 @@
 				5069BE171EA7B43700470B9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
