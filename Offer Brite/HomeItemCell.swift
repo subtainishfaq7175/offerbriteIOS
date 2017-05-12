@@ -17,6 +17,9 @@ class HomeItemCell: UITableViewCell {
     }
     @IBOutlet weak var likesBtnOL: UIButton!
     @IBOutlet weak var followedBtnOL: UIButton!
+    @IBOutlet weak var offerTitle: UILabel!
+    @IBOutlet weak var offerBanner: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         backgroundCardview.layer.cornerRadius = 3.0
@@ -29,7 +32,6 @@ class HomeItemCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
     
 }

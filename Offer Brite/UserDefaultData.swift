@@ -20,4 +20,10 @@ class UserDefaultsData {
     public static func getString(_ key:String) -> String{
         return AppDelegate.getUserDataInstance().string(forKey: key)!
     }
+    public static func setInteger(_ key:String, value:String){
+        AppDelegate.getUserDataInstance().set(value, forKey: key)
+    }
+    public static func getInteger(_ key:String) -> Int{
+        return AppDelegate.getUserDataInstance().integer(forKey: key)
+    }
 }

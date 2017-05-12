@@ -332,7 +332,7 @@
                                                         <state key="normal" title="Sign up Now"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By clicking signup you are agreeing to the Terms of user" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXc-S4-XQG">
-                                                        <rect key="frame" x="60" y="278" width="200" height="29"/>
+                                                        <rect key="frame" x="60" y="278" width="200" height="14.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -476,6 +476,9 @@
                                                         <state key="normal" title="7 Follows">
                                                             <color key="titleColor" red="0.83988806920000003" green="0.95918463239999996" blue="0.99419910450000004" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="follows:" destination="CgA-sa-g4C" eventType="touchUpInside" id="HJK-qq-7Ks"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYe-CO-wfV">
                                                         <rect key="frame" x="171" y="255" width="60" height="26"/>
@@ -487,6 +490,9 @@
                                                         <state key="normal" title="7 Likes">
                                                             <color key="titleColor" red="0.83988806920000003" green="0.95918463239999996" blue="0.99419910450000004" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="likes:" destination="CgA-sa-g4C" eventType="touchUpInside" id="Wqk-Ub-bxP"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKv-aD-h5t">
                                                         <rect key="frame" x="8" y="255" width="155" height="26"/>
@@ -560,7 +566,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="247" id="Mbc-Ac-scV"/>
                                                         </constraints>
-                                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
@@ -594,7 +600,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="246" id="DJn-Ol-cym"/>
                                                         </constraints>
-                                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
@@ -664,15 +670,23 @@
                         <outlet property="additionalContent" destination="kU2-7X-hln" id="d9d-RG-akv"/>
                         <outlet property="additionalLabel" destination="a7b-fT-cnm" id="Ols-LJ-l3k"/>
                         <outlet property="bottomView" destination="0Uw-H6-ex5" id="UH8-PW-C1E"/>
+                        <outlet property="catName" destination="LTl-tZ-YkQ" id="CvC-zl-wVJ"/>
+                        <outlet property="followsOL" destination="wzn-Ia-i6X" id="ADC-Z0-tMs"/>
                         <outlet property="itemContent" destination="91o-MT-5g7" id="dPX-n8-5vA"/>
+                        <outlet property="likesOL" destination="fYe-CO-wfV" id="55q-LD-gOv"/>
+                        <outlet property="mainImage" destination="CSD-h4-Fmq" id="d4d-UA-sdB"/>
                         <outlet property="mainScroller" destination="x9z-WE-rYX" id="fCJ-pD-GXx"/>
                         <outlet property="mainView" destination="oq0-IZ-uwB" id="kYy-43-s7h"/>
+                        <outlet property="offerTitle" destination="CKv-aD-h5t" id="dl6-kb-sli"/>
+                        <outlet property="startEndDate" destination="NRz-WX-LFh" id="kKU-XK-Avq"/>
+                        <outlet property="startEndTime" destination="VuU-n2-Fhw" id="kMS-LJ-Qx9"/>
+                        <outlet property="termConditionsLable" destination="S3V-kv-R9d" id="OS6-15-qbK"/>
                         <outlet property="topView" destination="ql2-II-fM8" id="EDb-PJ-VQW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PB2-OV-kBK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="80.625" y="-2696.25"/>
+            <point key="canvasLocation" x="81" y="-2769"/>
         </scene>
         <!--Navigation DrawerVC-->
         <scene sceneID="s95-gr-jTY">
@@ -701,42 +715,52 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
                                         <color key="backgroundColor" red="0.39266826923076925" green="0.2442251141836238" blue="0.33953062672293005" alpha="1" colorSpace="calibratedRGB"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user-image" translatesAutoresizingMaskIntoConstraints="NO" id="qiU-eF-Uci">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user-image" translatesAutoresizingMaskIntoConstraints="NO" id="qiU-eF-Uci">
                                         <rect key="frame" x="8" y="45" width="60" height="60"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="60" id="txS-Gt-pd1"/>
+                                            <constraint firstAttribute="height" constant="60" id="b6d-v9-dh1"/>
+                                            <constraint firstAttribute="width" constant="60" id="oBT-op-rqN"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="De Jones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qly-1y-ggb">
                                         <rect key="frame" x="8" y="105" width="292" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="cZP-zX-vHf">
-                                        <rect key="frame" x="8" y="134" width="200" height="2"/>
+                                        <rect key="frame" x="8" y="134.5" width="200" height="2"/>
                                         <color key="tintColor" red="0.94117647059999998" green="0.3921568627" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="dXf-Lj-mmX"/>
-                                        </constraints>
                                     </progressView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="85%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAG-F0-2SZ">
+                                        <rect key="frame" x="216" y="125" width="42" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="9S7-mO-uAT"/>
+                                            <constraint firstAttribute="width" constant="42" id="jRf-pO-Fj1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="jAG-F0-2SZ" firstAttribute="leading" secondItem="cZP-zX-vHf" secondAttribute="trailing" constant="8" symbolic="YES" id="467-qY-ZQy"/>
+                                    <constraint firstItem="cZP-zX-vHf" firstAttribute="leading" secondItem="Qly-1y-ggb" secondAttribute="leading" id="4Ip-dD-jBg"/>
                                     <constraint firstItem="KOM-ic-7Jg" firstAttribute="height" secondItem="Ix7-OK-gHD" secondAttribute="height" id="7Ne-4V-Dkt"/>
                                     <constraint firstItem="KOM-ic-7Jg" firstAttribute="leading" secondItem="Ix7-OK-gHD" secondAttribute="leading" id="9na-xO-T1a"/>
                                     <constraint firstItem="KOM-ic-7Jg" firstAttribute="centerY" secondItem="qiU-eF-Uci" secondAttribute="centerY" id="EUP-CM-Fmd"/>
                                     <constraint firstAttribute="trailing" secondItem="Qly-1y-ggb" secondAttribute="trailing" constant="20" id="G9Z-wI-skK"/>
                                     <constraint firstAttribute="trailing" secondItem="KOM-ic-7Jg" secondAttribute="trailing" id="QYi-oY-pMq"/>
+                                    <constraint firstAttribute="bottom" secondItem="jAG-F0-2SZ" secondAttribute="bottom" constant="4" id="URe-Rh-D27"/>
                                     <constraint firstAttribute="width" secondItem="Ix7-OK-gHD" secondAttribute="height" multiplier="32:15" id="WeF-LD-Ywf"/>
                                     <constraint firstItem="KOM-ic-7Jg" firstAttribute="top" secondItem="Ix7-OK-gHD" secondAttribute="top" id="WkF-UU-pXB"/>
-                                    <constraint firstItem="cZP-zX-vHf" firstAttribute="top" secondItem="Qly-1y-ggb" secondAttribute="bottom" constant="8" symbolic="YES" id="Wkb-a6-Try"/>
-                                    <constraint firstItem="qiU-eF-Uci" firstAttribute="top" secondItem="Ix7-OK-gHD" secondAttribute="top" constant="45" id="aNc-7S-eQ1"/>
                                     <constraint firstItem="Qly-1y-ggb" firstAttribute="top" secondItem="qiU-eF-Uci" secondAttribute="bottom" id="c6Y-8G-2bT"/>
                                     <constraint firstItem="qiU-eF-Uci" firstAttribute="leading" secondItem="Ix7-OK-gHD" secondAttribute="leadingMargin" id="eiX-8t-vjq"/>
-                                    <constraint firstItem="Qly-1y-ggb" firstAttribute="leading" secondItem="cZP-zX-vHf" secondAttribute="leading" id="mmM-Xb-ww6"/>
                                     <constraint firstItem="Qly-1y-ggb" firstAttribute="leading" secondItem="qiU-eF-Uci" secondAttribute="leading" id="oTn-od-yYX"/>
                                     <constraint firstItem="KOM-ic-7Jg" firstAttribute="width" secondItem="Ix7-OK-gHD" secondAttribute="width" id="rVS-Ke-Aua"/>
+                                    <constraint firstItem="jAG-F0-2SZ" firstAttribute="leading" secondItem="Ix7-OK-gHD" secondAttribute="leading" constant="216" id="u9B-ZV-MnD"/>
+                                    <constraint firstItem="cZP-zX-vHf" firstAttribute="top" secondItem="Qly-1y-ggb" secondAttribute="bottom" constant="8" symbolic="YES" id="y5p-fJ-Ffw"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -748,6 +772,7 @@
                             <constraint firstItem="Ix7-OK-gHD" firstAttribute="trailing" secondItem="inl-dw-UIJ" secondAttribute="trailing" id="PSa-Rb-TsT"/>
                             <constraint firstItem="inl-dw-UIJ" firstAttribute="bottom" secondItem="Ahw-EK-p7G" secondAttribute="top" id="TTM-8M-quo"/>
                             <constraint firstItem="Ix7-OK-gHD" firstAttribute="leading" secondItem="inl-dw-UIJ" secondAttribute="leading" id="YQu-W0-AIf"/>
+                            <constraint firstItem="inl-dw-UIJ" firstAttribute="top" secondItem="Qly-1y-ggb" secondAttribute="bottom" constant="24" id="ePN-N8-ek7"/>
                             <constraint firstItem="Ahw-EK-p7G" firstAttribute="top" secondItem="inl-dw-UIJ" secondAttribute="bottom" id="hu2-oa-Til"/>
                             <constraint firstItem="inl-dw-UIJ" firstAttribute="leading" secondItem="SOt-sX-GUh" secondAttribute="leading" id="l35-Il-CMw"/>
                             <constraint firstAttribute="trailing" secondItem="inl-dw-UIJ" secondAttribute="trailing" id="xft-kP-uqV"/>
@@ -755,11 +780,15 @@
                     </view>
                     <connections>
                         <outlet property="drawerTV" destination="inl-dw-UIJ" id="hmd-PX-ME6"/>
+                        <outlet property="percentageLable" destination="jAG-F0-2SZ" id="btL-nR-oF4"/>
+                        <outlet property="profilePercentage" destination="cZP-zX-vHf" id="QbH-7f-IAA"/>
+                        <outlet property="userImage" destination="qiU-eF-Uci" id="yPW-Gf-n0B"/>
+                        <outlet property="userName" destination="Qly-1y-ggb" id="Ghq-L0-r5a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G6Z-7h-Qc7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-774.375" y="-1706.25"/>
+            <point key="canvasLocation" x="-639" y="-1724"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Yl6-IG-zTJ">
@@ -840,7 +869,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sqn-Qc-mUL" customClass="HoshiTextField" customModule="Offer_Brite" customModuleProvider="target">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sqn-Qc-mUL" customClass="HoshiTextField" customModule="Offer_Brite" customModuleProvider="target">
                                                         <rect key="frame" x="60" y="66" width="200" height="50"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
@@ -848,7 +877,7 @@
                                                         </constraints>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
                                                                 <color key="value" red="0.93293398620000001" green="0.38211515550000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -869,6 +898,9 @@
                                                         </constraints>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <state key="normal" title="Login"/>
+                                                        <connections>
+                                                            <action selector="loginAction:" destination="r3a-wg-2Gt" eventType="touchUpInside" id="DqE-8e-ski"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fogot Password?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLY-jM-abU">
                                                         <rect key="frame" x="60" y="162" width="200" height="15"/>

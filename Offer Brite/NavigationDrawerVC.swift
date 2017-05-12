@@ -9,7 +9,6 @@
 import UIKit
 
 class NavigationDrawerVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
-   // var drawerItemList = [DrawerItemModel]()
     var firstSectionData = [DrawerItemModel]()
     var secondSectionData = [DrawerItemModel]()
 
@@ -18,19 +17,42 @@ class NavigationDrawerVC: UIViewController, UITableViewDataSource, UITableViewDe
     let sectionSecond = 2
     let sectionHeaders = ["Home","About"]
 
-    let staticDrawerFirstSection = ["Home","Liked","Followed"]
+    var staticDrawerFirstSection = [String]()
     let staticDrawerFirstSectionIds = [1,2,3]
 
     let staticDrawerSecondSection = ["Privacy Policy","Terms and Conditions","App Version"]
     let staticDrawerSecondSectionIds = [4,5,6]
 
 
+    @IBOutlet weak var percentageLable: UILabel!
+    @IBOutlet weak var profilePercentage: UIProgressView!
+    @IBOutlet weak var userName: UILabel!
+    @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var drawerTV: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        checkIsUserLogin()
+        userImage.layer.masksToBounds = true
+        userImage.layer.borderColor = UIColor.lightGray.cgColor
+        userImage.layer.borderWidth = Constants.VALUE_ONE_CGF
+        userImage.layer.cornerRadius = self.userImage.frame.size.height / Constants.VALUE_TWO_CGF
         drawerTV.register(UINib(nibName: IdentifierConstants.XIB_DRAWER_CELL , bundle: nil), forCellReuseIdentifier: IdentifierConstants.XIB_DRAWER_CELL)
         firstSectionData = loadData(sectionFirst)
         secondSectionData = loadData(sectionSecond)
+    }
+    func checkIsUserLogin()  {
+        if UserDefaultsData.getBool(DefaultDataConstants.IS_USER_LOGIN){
+            staticDrawerFirstSection = ["Home","Liked","Followed"]
+            userName.text = UserDefaultsData.getString(DefaultDataConstants.USER_NAME)
+            profilePercentage.progress = (Float (UserDefaultsData.getInteger(DefaultDataConstants.PROFILE_PERCENTAGE))/Float(Constants.VALUE_HUNDRAD_INT))
+            percentageLable.text = "\(UserDefaultsData.getInteger(DefaultDataConstants.PROFILE_PERCENTAGE))%"
+        }else {
+            staticDrawerFirstSection = ["Home"]
+            percentageLable.isHidden = true
+            profilePercentage.isHidden = true
+            userName.text = Constants.APP_NAME
+
+        }
     }
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = true

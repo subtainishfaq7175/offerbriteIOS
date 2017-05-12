@@ -8,9 +8,10 @@
 
 import UIKit
 import CoreData
+import Alamofire
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    var reachability: Reachability? = Reachability.networkReachabilityForInternetConnection()
     var window: UIWindow?
     var drawerSide:MMDrawerSide = .left
     var centerContainer:MMDrawerController?
@@ -18,13 +19,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let storyBoard = UIStoryboard(name: Constants.MAIN, bundle: nil)
     public static var delegateInstance:AppDelegate?
     public static var defaultInstance:UserDefaults?
-
+    var headerParams:HTTPHeaders?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         registerDefualts()
         UINavigationBar.appearance().barTintColor = UIColor.purple
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         UINavigationBar.appearance().barStyle = .blackTranslucent
         presentInitialVC()
+        setObservers()
         return true
     }
     public static func getDelegateInstance() -> AppDelegate{
@@ -33,11 +35,41 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         return delegateInstance!
     }
+    func  getRequestHeader() -> HTTPHeaders {
+        if headerParams == nil {
+             headerParams = [ConstantsKeyPairs.HEADER_SECRET_KEY: ServerConstants.APP_SECRET_KEY, ConstantsKeyPairs.HEADER_API_KEY: ServerConstants.APP_API_KEY]
+        }
+        return headerParams!
+    }
     public static func getUserDataInstance() -> UserDefaults{
         if defaultInstance == nil {
         defaultInstance = UserDefaults.standard
         }
         return defaultInstance!
+    }
+    func setObservers()  {
+         NotificationCenter.default.addObserver(self, selector: #selector(reachabilityDidChange(_:)), name: NSNotification.Name(rawValue: ReachabilityDidChangeNotificationName), object: nil)
+    }
+    func reachabilityDidChange(_ notification: Notification) {
+        checkReachability()
+    }
+    func checkReachability() {
+        guard let r = reachability else { return }
+        let vc = (self.window?.rootViewController)!
+        if r.isReachable  {
+            wifiOrWwlan(r, vc:vc)
+        } else {
+        }
+    }
+    func wifiOrWwlan(_ r:Reachability, vc:UIViewController){
+        switch r.currentReachabilityStatus {
+        case ReachabilityStatus.reachableViaWiFi:
+            break
+        case ReachabilityStatus.reachableViaWWAN:
+            break
+        default:
+            break
+        }
     }
     func presentInitialVC() {
         
@@ -50,7 +82,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
     func registerDefualts() {
-        AppDelegate.getUserDataInstance().register(defaults: [ConstantsKeyPairs.IS_FIRST_TIME : true])
+        AppDelegate.getUserDataInstance().register(defaults: [DefaultDataConstants.IS_FIRST_TIME : true])
+        AppDelegate.getUserDataInstance().register(defaults: [DefaultDataConstants.IS_USER_LOGIN : false])
+        AppDelegate.getUserDataInstance().register(defaults: [DefaultDataConstants.USER_NAME : Constants.EMPTY_STRING])
+        AppDelegate.getUserDataInstance().register(defaults: [DefaultDataConstants.USER_EMAIL : Constants.EMPTY_STRING])
+        AppDelegate.getUserDataInstance().register(defaults: [DefaultDataConstants.USER_TOKEN : Constants.EMPTY_STRING])
+        AppDelegate.getUserDataInstance().register(defaults: [DefaultDataConstants.USER_PHONE : Constants.EMPTY_STRING])
+        AppDelegate.getUserDataInstance().register(defaults: [DefaultDataConstants.USER_PIC : Constants.EMPTY_STRING])
+        AppDelegate.getUserDataInstance().register(defaults: [DefaultDataConstants.PROFILE_PERCENTAGE : Constants.VALUE_ZERO_INT])
+
+
     }
     func setDrawer()  {
         let centerViewController = self.storyBoard.instantiateViewController(withIdentifier: Constants.VIEW_CONTROLLER) as! ViewController

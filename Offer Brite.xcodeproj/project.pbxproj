@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4087A7ADBC82F504A01C7489 /* Pods_Offer_BriteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E900D73FA5854387EAD67BB7 /* Pods_Offer_BriteTests.framework */; };
+		50370C691EB33DC3006493DF /* ResOffers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50370C681EB33DC3006493DF /* ResOffers.swift */; };
+		50370C6B1EB33E65006493DF /* OfferModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50370C6A1EB33E65006493DF /* OfferModel.swift */; };
+		50370C6D1EB36697006493DF /* LikeFollowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50370C6C1EB36697006493DF /* LikeFollowModel.swift */; };
+		50370C6F1EB3879F006493DF /* ResOfferDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50370C6E1EB3879F006493DF /* ResOfferDetails.swift */; };
 		503967DD1EAE4B87004AE96B /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503967DA1EAE4B87004AE96B /* HoshiTextField.swift */; };
 		503967DE1EAE4B87004AE96B /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503967DC1EAE4B87004AE96B /* TextFieldsEffects.swift */; };
 		503967E01EAE4E8C004AE96B /* ConstantsKeyPairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503967DF1EAE4E8C004AE96B /* ConstantsKeyPairs.swift */; };
@@ -41,6 +45,12 @@
 		5073EB631EA8B6F700CA50D6 /* HomeItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073EB611EA8B6F700CA50D6 /* HomeItemCell.swift */; };
 		5073EB641EA8B6F700CA50D6 /* HomeItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5073EB621EA8B6F700CA50D6 /* HomeItemCell.xib */; };
 		5073EB661EA8C38700CA50D6 /* AppVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073EB651EA8C38700CA50D6 /* AppVersion.swift */; };
+		507591C21EB1EBC4005434BA /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507591C11EB1EBC4005434BA /* Reachability.swift */; };
+		507591C41EB1F187005434BA /* StringExts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507591C31EB1F187005434BA /* StringExts.swift */; };
+		507591C61EB1FA2E005434BA /* ServerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507591C51EB1FA2E005434BA /* ServerConstants.swift */; };
+		507591C91EB1FB4C005434BA /* ResGeneral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507591C71EB1FB4C005434BA /* ResGeneral.swift */; };
+		507591CA1EB1FB4C005434BA /* ResUserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507591C81EB1FB4C005434BA /* ResUserLogin.swift */; };
+		507591CC1EB1FD36005434BA /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507591CB1EB1FD36005434BA /* UserModel.swift */; };
 		508276DD1EAFA05300072AEB /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508276DC1EAFA05300072AEB /* AppUtils.swift */; };
 		84E0BAE47D9BA482CA79426F /* Pods_Offer_BriteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D0097FDC4E93DD622E67B1 /* Pods_Offer_BriteUITests.framework */; };
 		D50D9C1C12C72A77B389A7F9 /* Pods_Offer_Brite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517BB4B13625A207958A523C /* Pods_Offer_Brite.framework */; };
@@ -65,6 +75,10 @@
 
 /* Begin PBXFileReference section */
 		14D0097FDC4E93DD622E67B1 /* Pods_Offer_BriteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Offer_BriteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50370C681EB33DC3006493DF /* ResOffers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResOffers.swift; sourceTree = "<group>"; };
+		50370C6A1EB33E65006493DF /* OfferModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferModel.swift; sourceTree = "<group>"; };
+		50370C6C1EB36697006493DF /* LikeFollowModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeFollowModel.swift; sourceTree = "<group>"; };
+		50370C6E1EB3879F006493DF /* ResOfferDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResOfferDetails.swift; sourceTree = "<group>"; };
 		503967DA1EAE4B87004AE96B /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
 		503967DB1EAE4B87004AE96B /* TextFieldEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldEffects.h; sourceTree = "<group>"; };
 		503967DC1EAE4B87004AE96B /* TextFieldsEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldsEffects.swift; sourceTree = "<group>"; };
@@ -111,6 +125,12 @@
 		5073EB611EA8B6F700CA50D6 /* HomeItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeItemCell.swift; sourceTree = "<group>"; };
 		5073EB621EA8B6F700CA50D6 /* HomeItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeItemCell.xib; sourceTree = "<group>"; };
 		5073EB651EA8C38700CA50D6 /* AppVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppVersion.swift; sourceTree = "<group>"; };
+		507591C11EB1EBC4005434BA /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		507591C31EB1F187005434BA /* StringExts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExts.swift; sourceTree = "<group>"; };
+		507591C51EB1FA2E005434BA /* ServerConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerConstants.swift; sourceTree = "<group>"; };
+		507591C71EB1FB4C005434BA /* ResGeneral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResGeneral.swift; sourceTree = "<group>"; };
+		507591C81EB1FB4C005434BA /* ResUserLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResUserLogin.swift; sourceTree = "<group>"; };
+		507591CB1EB1FD36005434BA /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		508276DC1EAFA05300072AEB /* AppUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
 		517BB4B13625A207958A523C /* Pods_Offer_Brite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Offer_Brite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BB004CD5D9A9A865F5408C3 /* Pods-Offer Brite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Offer Brite.release.xcconfig"; path = "Pods/Target Support Files/Pods-Offer Brite/Pods-Offer Brite.release.xcconfig"; sourceTree = "<group>"; };
@@ -185,11 +205,11 @@
 		5069BDE61EA7B43500470B9E /* Offer Brite */ = {
 			isa = PBXGroup;
 			children = (
-				503967D91EAE4AE0004AE96B /* TextFieldEffects */,
 				5069BE201EA7B5AA00470B9E /* SlideMenu */,
+				503967D91EAE4AE0004AE96B /* TextFieldEffects */,
 				5069BE1F1EA7B58A00470B9E /* Responses */,
-				5069BE1E1EA7B58000470B9E /* Utils */,
 				5069BE1D1EA7B57800470B9E /* Models */,
+				5069BE1E1EA7B58000470B9E /* Utils */,
 				5069BE1C1EA7B56B00470B9E /* Screens */,
 				5069BE1B1EA7B56300470B9E /* TVCells */,
 				5069BE1A1EA7B54F00470B9E /* Extensions */,
@@ -243,6 +263,7 @@
 		5069BE1A1EA7B54F00470B9E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				507591C31EB1F187005434BA /* StringExts.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -275,7 +296,10 @@
 		5069BE1D1EA7B57800470B9E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				507591CB1EB1FD36005434BA /* UserModel.swift */,
 				50528F501EAF53E300B19D0E /* DrawerItemModel.swift */,
+				50370C6A1EB33E65006493DF /* OfferModel.swift */,
+				50370C6C1EB36697006493DF /* LikeFollowModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -283,12 +307,14 @@
 		5069BE1E1EA7B58000470B9E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				508276DC1EAFA05300072AEB /* AppUtils.swift */,
+				507591C11EB1EBC4005434BA /* Reachability.swift */,
 				5069BE2F1EA7C07300470B9E /* Constants.swift */,
 				5069BE311EA7C3C500470B9E /* IdentifierConstants.swift */,
 				503967DF1EAE4E8C004AE96B /* ConstantsKeyPairs.swift */,
 				503967E11EAE4ECE004AE96B /* DefaultDataConstants.swift */,
 				503967E31EAE4F2B004AE96B /* UserDefaultData.swift */,
-				508276DC1EAFA05300072AEB /* AppUtils.swift */,
+				507591C51EB1FA2E005434BA /* ServerConstants.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -296,6 +322,10 @@
 		5069BE1F1EA7B58A00470B9E /* Responses */ = {
 			isa = PBXGroup;
 			children = (
+				507591C71EB1FB4C005434BA /* ResGeneral.swift */,
+				507591C81EB1FB4C005434BA /* ResUserLogin.swift */,
+				50370C681EB33DC3006493DF /* ResOffers.swift */,
+				50370C6E1EB3879F006493DF /* ResOfferDetails.swift */,
 			);
 			name = Responses;
 			sourceTree = "<group>";
@@ -615,18 +645,27 @@
 				508276DD1EAFA05300072AEB /* AppUtils.swift in Sources */,
 				5073EB581EA8A30E00CA50D6 /* PrivacyPolicy.swift in Sources */,
 				50528F4E1EAF537F00B19D0E /* DrawerItemCell.swift in Sources */,
+				507591C91EB1FB4C005434BA /* ResGeneral.swift in Sources */,
 				503967E01EAE4E8C004AE96B /* ConstantsKeyPairs.swift in Sources */,
 				5073EB5A1EA8A33000CA50D6 /* TermsConditions.swift in Sources */,
+				50370C6F1EB3879F006493DF /* ResOfferDetails.swift in Sources */,
 				5069BE2C1EA7B5FC00470B9E /* MMDrawerVisualState.m in Sources */,
+				507591CC1EB1FD36005434BA /* UserModel.swift in Sources */,
 				5069BDEA1EA7B43500470B9E /* ViewController.swift in Sources */,
 				5073EB631EA8B6F700CA50D6 /* HomeItemCell.swift in Sources */,
+				50370C6D1EB36697006493DF /* LikeFollowModel.swift in Sources */,
+				50370C691EB33DC3006493DF /* ResOffers.swift in Sources */,
+				507591C41EB1F187005434BA /* StringExts.swift in Sources */,
 				503967E41EAE4F2B004AE96B /* UserDefaultData.swift in Sources */,
 				5073EB5C1EA8A35700CA50D6 /* Login.swift in Sources */,
+				507591CA1EB1FB4C005434BA /* ResUserLogin.swift in Sources */,
 				5073EB521EA89F6400CA50D6 /* UIViewController+MMDrawerController.m in Sources */,
+				507591C21EB1EBC4005434BA /* Reachability.swift in Sources */,
 				5069BE2B1EA7B5FC00470B9E /* MMDrawerController.m in Sources */,
 				5069BE321EA7C3C500470B9E /* IdentifierConstants.swift in Sources */,
 				5069BE2A1EA7B5FC00470B9E /* MMDrawerBarButtonItem.m in Sources */,
 				503967DD1EAE4B87004AE96B /* HoshiTextField.swift in Sources */,
+				507591C61EB1FA2E005434BA /* ServerConstants.swift in Sources */,
 				5073EB661EA8C38700CA50D6 /* AppVersion.swift in Sources */,
 				503967E21EAE4ECE004AE96B /* DefaultDataConstants.swift in Sources */,
 				503BD73E1EB0A5C400D634D2 /* HomeItemDetails.swift in Sources */,
@@ -634,6 +673,7 @@
 				5069BDE81EA7B43500470B9E /* AppDelegate.swift in Sources */,
 				5069BDF01EA7B43600470B9E /* Offer_Brite.xcdatamodeld in Sources */,
 				5073EB5E1EA8A36400CA50D6 /* SignUp.swift in Sources */,
+				50370C6B1EB33E65006493DF /* OfferModel.swift in Sources */,
 				5073EB541EA8A2D300CA50D6 /* Liked.swift in Sources */,
 				5069BE301EA7C07300470B9E /* Constants.swift in Sources */,
 			);
